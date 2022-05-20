@@ -15,12 +15,17 @@ public class EmployeeWage {
 		int partTimeHours = 4;
 		int wagePerDay = 0;
 
-		if (attendance == 0)
+		switch (attendance) {
+		case 0:
 			System.out.println("Employee Absent.");
-		else if (attendance == 1)
+			break;
+		case 1:
 			wagePerDay = partTimeHours * wagePerHour;
-		else
+			break;
+		default:
 			wagePerDay = fullDayHours * wagePerHour;
+
+		}
 
 		System.out.println("Employee Wage Per Day: " + wagePerDay);
 
