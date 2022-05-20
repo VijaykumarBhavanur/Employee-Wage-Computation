@@ -26,7 +26,7 @@ public class EmployeeWage {
 			wagePerDay = fullDayHours * wagePerHour;
 
 		}
-
+ 
 		System.out.println("Employee Wage Per Day: " + wagePerDay);
 
 	}
